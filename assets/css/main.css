@@ -237,7 +237,8 @@ input, select, textarea {
 
 	h5 {
 		font-weight: 500;
-		line-height: 0.6;
+		/* line-height: 0.6; */
+		line-height: 1;
 		margin: 0 0 0em 0;
 		text-transform: uppercase;
 		letter-spacing: 0.30em;
@@ -2981,6 +2982,13 @@ input, select, textarea {
 			overflow: hidden;
 		}
 
+		#header .profPic {
+			width: 100%; /* or specific dimensions */
+			height: auto; /* Keeps the aspect ratio */
+			object-fit: contain;
+			display: block; /* Removes any extra space at the bottom */
+		}
+
 			#header .content .inner > :last-child {
 				margin-bottom: 0;
 			}
@@ -3596,3 +3604,4 @@ input, select, textarea {
 	body.is-preload #bg-article:before {
 		background-color: #000000;
 	} */
+
