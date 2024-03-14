@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Smarthome Kitchen Kiosk</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper-article">
+				<!-- Nav Header -->
+
+				<!-- Main -->
+					<div id="main-article">
+						<!-- <div class="inner"> -->
+							<h3>Smarthome Kitchen Kiosk</h3>
+							<img src="images/kioskInUse.jpeg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+							<b>Background:</b>
+							<p>I started this project because of a combination of factors: I found that when cooking, I often used my laptop to pull up recipes so I wouldn’t have to handle my phone. Furthermore, I had been adding an increasing number of smart devices to my house, and I could have it generally display the main Home Assistant page. Finally, I have been interested in local-network voice control, and thought it might form a good base for tinkering with using Rhasspy and a PSEye for a local voice assistant.</p>
+							<b>Phase 1: Ideation</b>
+							<p>I centered the design around a 12” damaged LCD touchscreen that I purchased. In order to ensure that it would have sufficient processing power to handle potential voice assistant functions or other things I might add, I chose a Raspberry Pi 4 for the main board. To ensure stability, I incorporated a USB adapter to connect a small old m.2 SSD as the boot drive, avoiding the failure of flash chips common with SD cards. Finally, I also planned to use a small buck converter so that a single 12V power supply could power the whole unit.</p>
+							<b>Phase 2: Planning</b>
+							<p>Once I had obtained the parts, I assembled the components, installed Raspbian, and verified that everything performed adequately. I found that under load the Raspberry Pi benefitted from active cooling, as did the LCD when on for long durations. As such, I added a small fan to the design.</p>
+							<p>I then modeled the case in Fusion 360, designing it to replace the back casing of the LCD screen. I added mount points for each of the components, and guides to funnel air from the intake grate over the Raspberry Pi, buck converter, and LCD chips before exiting the top. I also sized the mounting holes for the rear panel to use brass inserts for reliability over time.</p>
+							<b>Phase 3: Development</b>
+							<p>Once designed, I 3D printed the case and internal air baffles at the Spartan Makerspace at WashU, then assembled the complete kiosk.</p>
+							<img src="images/kioskOpen.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+							<b>Phase 4: Testing and Iteration</b>
+							<p>The kiosk worked as expected, however the fan was sufficiently noisy to be noticeable during quiet hours. I ended up replacing it with a 40mm Noctua fan.</p>
+							<img src="images/kioskSide.jpeg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+							<b>Phase 5: In Use</b>
+							<p>The kiosk, now in use, provides an effective way to display recipes, navigate smart home features, and watch entertainment while cooking.</p>
+
+							<p></p>
+						<!-- </div> -->
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer-article">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; 2024 Michael R. Traner. All rights reserved.</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg-article"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
