@@ -2414,7 +2414,7 @@ input, select, textarea {
 
 			} */
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 1081px) {
 			.image img, .image .custimg_full, .image .custimg_lg, .image .custimg_med, .image .custimg_sm {
 				width: 100%;
 				height: auto;
