@@ -50,7 +50,9 @@
 							<li>Encourage ascent of treadmill 		-> Slope to use negative gravitaxis to encourage upward movement, and slippery sides to prevent climbing the walls instead of the floor</li>
 							</ul>
 							<p>Once the requirements and initial designs had been developed, prototyping of components and the full system could begin.</p>
-							<img src="images/treadmillAtHome.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 40%;">
+							<div class="image">
+								<img src="images/treadmillAtHome.jpg" class="custimg_sm">
+							</div>
 							<b>Phase 3: Prototyping and development</b>
 							<p>The first phase of development involved prototyping multiple sub-systems. This was made more difficult by the work being performed during the early phase of COVID, with associated supply challenges. Furthermore, campus was closed, and so most development work was carried out in my dining room or at a local makerspace during open hours. The most challenging system to develop was the print mechanism for depositing odorant to form the trail. I prototyped and tested a number of competing approaches, including:</p>
 							<ul style="padding-left:40px">
@@ -72,14 +74,18 @@
 							<b>Phase 4: Testing and Iteration</b>
 							<p>The treadmill was extensively tested prior to use, beginning with black “pseudo locusts” to verify tracking, printing, and paper-towel movement performance, during which a number of issues were rectified. It was then tested using locusts, and test data collected using a zig-zag pattern, and the performance and data analyzed to refine the trial process. </p>
 							<p>One particularly confusing bug encountered at this point was periodic false positives on a limit switch, and occasional embedded controller restarts. Ultimately this was traced to a buildup of static electricity due to the movement of the paper towel, and was addressed by a combination of mechanical (limiting of plastic surfaces the paper towel slid over) and electrical revisions (additional grounding and shielding of some cables, incorporation of opto-isolation to protect the core microcontroller from any static that might affect other components, and software revisions to unexpected limit switch triggers).</p>
-							<img src="images/PCBLayout.png" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 40%;">
+							<div class="image">
+								<img src="images/PCBLayout.png" class="custimg_sm">
+							</div>
 							<p>Other revisions during this period included mechanical protection over the drive mechanism to prevent the paper towel from becoming entangled, implementation of a more precise and stable alignment system for the paper towel to prevent lateral drift during operation, and the revision of most components to modular assemblies for easier movement and greater flexibility for future iterations. </p>
 							<b>Phase 5: Operation and Release</b>
 							<p>For the purposes of the proof-of-concept study evaluating trail-following behavior in locusts, it was decided to use straight lines in the middle of the arena rather than more complex patterns. I selected a final panel of 24 odorants, combining promising odorants from the early-phase tests with panels used in other lab studies. The study process had been refined to measure a single odor and control condition each day for multiple locusts, reducing the time needed to flush the odorant system after switching odorants, and the colony was sufficiently robust to handle the large number of locusts I would require. </p>
 							<p>I then collected over 600 hours of locust movement data, and analyzed them to evaluate trail following behavior and modulation of exploratory behavior by odor proximity (see paper preprint for details), before writing up the results and submitting a paper. </p>
 							<p>I also performed final revision of the treadmill design, incorporating some additional fixes and features, and published it as an open-source project. While the design could have been revised further, it was sufficient for our purposes, and will provide a useful starting point for future studies. Useful features not incorporated in the final design and suggestions on how to add them (such as a second printhead or a reward mechanism for conditioning) are discussed in the design document, along with considerations for building. </p>
-							<img src="images/TreadmillPublishedDesign.png" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
-
+							<div class="image">
+								<img src="images/TreadmillPublishedDesign.png" alt="" class="custimg_full">
+								<!-- <img src="images/TreadmillPublishedDesign.png" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;"> -->
+							</div>
 						<!-- </div> -->
 					</div>
 
