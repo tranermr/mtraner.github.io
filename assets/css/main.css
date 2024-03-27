@@ -2357,14 +2357,32 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			/* @media screen and (max-width: 1280px) {
+			@media screen and (max-width: 1280px) {
 
-				.image.custimg_full {
+				.image .custimg_full {
 					width: 100%;
 					height: auto;
 				}
 
-			} */
+			}
+
+			@media screen and (max-width: 1080px) {
+
+				.image .custimg_full {
+					width: 100%;
+					height: auto;
+				}
+
+			}
+
+			@media screen and (max-width:736px) {
+
+				.image .custimg_full {
+					width: 100%;
+					height: auto;
+				}
+
+			}
 	
 		.image .custimg_lg {
 			display: block; 
@@ -2373,14 +2391,32 @@ input, select, textarea {
 			width: 80%;
 		}
 
-			/* @media screen and (max-width: 1280px) {
+			@media screen and (max-width: 1280px) {
 
-				.image.custimg_lg {
+				.image .custimg_lg {
+					width: 80%;
+					height: auto;
+				}
+
+			}
+
+			@media screen and (max-width: 1080px) {
+
+				.image .custimg_lg {
+					width: 90%;
+					height: auto;
+				}
+
+			}
+
+			@media screen and (max-width:736px) {
+
+				.image .custimg_lg {
 					width: 100%;
 					height: auto;
 				}
 
-			} */
+			}
 				
 		.image .custimg_med {
 			display: block; 
@@ -2389,14 +2425,33 @@ input, select, textarea {
 			width: 60%;
 		}
 
-			/* @media screen and (max-width: 1280px) {
+			@media screen and (max-width: 1280px) {
 
-				.image.custimg_med {
+				.image .custimg_med {
+					width: 75%;
+					height: auto;
+				}
+
+			}
+
+			
+			@media screen and (max-width: 1080px) {
+
+				.image .custimg_med {
+					width: 80%;
+					height: auto;
+				}
+
+			}
+
+			@media screen and (max-width:736px) {
+
+				.image .custimg_med {
 					width: 100%;
 					height: auto;
 				}
 
-			} */
+			}
 
 		.image .custimg_sm {
 			display: block; 
@@ -2405,21 +2460,40 @@ input, select, textarea {
 			width: 40%;
 		}
 
-			/* @media screen and (max-width: 1280px) {
+			@media screen and (max-width: 1280px) {
 
-				.image.custimg_sm {
+				.image .custimg_sm {
+					width: 60%;
+					height: auto;
+				}
+
+			}
+
+			
+			@media screen and (max-width: 1080px) {
+
+				.image .custimg_sm {
+					width: 80%;
+					height: auto;
+				}
+
+			}
+
+			@media screen and (max-width:736px) {
+
+				.image .custimg_sm {
 					width: 100%;
 					height: auto;
 				}
 
-			} */
+			}
 
-		@media screen and (max-width: 1081px) {
-			.image img, .image .custimg_full, .image .custimg_lg, .image .custimg_med, .image .custimg_sm {
+		/* @media screen and (max-width: 1081px) {
+			.image .custimg_full, .image .custimg_lg, .image .custimg_med, .image .custimg_sm {
 				width: 100%;
 				height: auto;
 			}
-		}
+		} */
 
 		.image img {
 			border-radius: 4px;
@@ -2475,18 +2549,68 @@ input, select, textarea {
 			}
 
 /* Video */
-	.video {
-		max-width: 40%;
+	.video_sm {
+		width: 30%;
+		height: auto;
+		display: block; /* This ensures it takes the full width of its container */
+		margin: 0 auto; /* This centers the video in the container */
+	}
+
+	.video_med {
+		width: 50%;
+		height: auto;
+		display: block; /* This ensures it takes the full width of its container */
+		margin: 0 auto; /* This centers the video in the container */
+	}
+
+	.video_lg {
+		width: 70%;
 		height: auto;
 		display: block; /* This ensures it takes the full width of its container */
 		margin: 0 auto; /* This centers the video in the container */
 	}
 	
-	@media screen and (max-width: 736px) {
-		.video {
-		width: 100%; /* Makes the video take up the full width on smaller screens */
+		@media screen and (max-width: 1280px) {
+			.video_sm {
+			width: 40%; /* Makes the video take up the full width on smaller screens */
+			}
+
+			.video_med {
+			width: 60%; /* Makes the video take up the full width on smaller screens */
+			}
+
+			.video_lg {
+			width: 80%; /* Makes the video take up the full width on smaller screens */
+			}
 		}
-	}
+
+		@media screen and (max-width: 1080px) {
+			.video_sm {
+			width: 60%; /* Makes the video take up the full width on smaller screens */
+			}
+
+			.video_med {
+			width: 80%; /* Makes the video take up the full width on smaller screens */
+			}
+
+			.video_lg {
+			width: 100%; /* Makes the video take up the full width on smaller screens */
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			.video_sm {
+			width: 100%; /* Makes the video take up the full width on smaller screens */
+			}
+
+			.video_med {
+			width: 100%; /* Makes the video take up the full width on smaller screens */
+			}
+
+			.video_lg {
+			width: 100%; /* Makes the video take up the full width on smaller screens */
+			}
+		}
 
 /* Table */
 
