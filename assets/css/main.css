@@ -2344,7 +2344,9 @@ input, select, textarea {
 	.image {
 		border-radius: 4px;
 		border: 0;
-		display: inline-block;
+		/* If the main page breaks, check the display settings here: */
+		/* display: inline-block; */ 
+		display: block;
 		position: relative;
 	}
 
@@ -2355,7 +2357,7 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 1280px) {
 
 				.image.custimg_full {
 					width: 100%;
@@ -2370,7 +2372,7 @@ input, select, textarea {
 			width: 80%;
 		}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 1280px) {
 
 				.image.custimg_lg {
 					width: 100%;
@@ -2385,7 +2387,7 @@ input, select, textarea {
 			width: 60%;
 		}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 1280px) {
 
 				.image.custimg_med {
 					width: 100%;
@@ -2400,7 +2402,7 @@ input, select, textarea {
 			width: 40%;
 		}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 1280px) {
 
 				.image.custimg_sm {
 					width: 100%;
@@ -2461,7 +2463,19 @@ input, select, textarea {
 
 			}
 
-		
+/* Video */
+	.video {
+		max-width: 40%;
+		height: auto;
+		display: block; /* This ensures it takes the full width of its container */
+		margin: 0 auto; /* This centers the video in the container */
+	}
+	
+	@media screen and (max-width: 736px) {
+		.video {
+		width: 100%; /* Makes the video take up the full width on smaller screens */
+		}
+	}
 
 /* Table */
 

@@ -77,9 +77,10 @@
 							<p>The treadmill was extensively tested prior to use, beginning with black “pseudo locusts” to verify tracking, printing, and paper-towel movement performance, during which a number of issues were rectified. It was then tested using locusts, and test data collected using a zig-zag pattern, and the performance and data analyzed to refine the trial process. </p>
 							<p>One particularly confusing bug encountered at this point was periodic false positives on a limit switch, and occasional embedded controller restarts. Ultimately this was traced to a buildup of static electricity due to the movement of the paper towel, and was addressed by a combination of mechanical (limiting of plastic surfaces the paper towel slid over) and electrical revisions (additional grounding and shielding of some cables, incorporation of opto-isolation to protect the core microcontroller from any static that might affect other components, and software revisions to unexpected limit switch triggers).</p>
 							<div class="image">
-								<img src="images/PCBLayout.png" class="custimg_med">
-							</div>
+								<img src="images/PCBLayout.png" alt="" class="custimg_med">
+							</div> 
 							<p>Other revisions during this period included mechanical protection over the drive mechanism to prevent the paper towel from becoming entangled, implementation of a more precise and stable alignment system for the paper towel to prevent lateral drift during operation, and the revision of most components to modular assemblies for easier movement and greater flexibility for future iterations. </p>
+							
 							<b>Phase 5: Operation and Release</b>
 							<p>For the purposes of the proof-of-concept study evaluating trail-following behavior in locusts, it was decided to use straight lines in the middle of the arena rather than more complex patterns. I selected a final panel of 24 odorants, combining promising odorants from the early-phase tests with panels used in other lab studies. The study process had been refined to measure a single odor and control condition each day for multiple locusts, reducing the time needed to flush the odorant system after switching odorants, and the colony was sufficiently robust to handle the large number of locusts I would require. </p>
 							<p>I then collected over 600 hours of locust movement data, and analyzed them to evaluate trail following behavior and modulation of exploratory behavior by odor proximity (see paper preprint for details), before writing up the results and submitting a paper. </p>
