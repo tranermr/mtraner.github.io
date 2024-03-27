@@ -2357,13 +2357,14 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			@media screen and (max-width: 1280px) {
+			/* @media screen and (max-width: 1280px) {
 
 				.image.custimg_full {
 					width: 100%;
+					height: auto;
 				}
 
-			}
+			} */
 	
 		.image .custimg_lg {
 			display: block; 
@@ -2372,13 +2373,14 @@ input, select, textarea {
 			width: 80%;
 		}
 
-			@media screen and (max-width: 1280px) {
+			/* @media screen and (max-width: 1280px) {
 
 				.image.custimg_lg {
 					width: 100%;
+					height: auto;
 				}
 
-			}
+			} */
 				
 		.image .custimg_med {
 			display: block; 
@@ -2387,13 +2389,14 @@ input, select, textarea {
 			width: 60%;
 		}
 
-			@media screen and (max-width: 1280px) {
+			/* @media screen and (max-width: 1280px) {
 
 				.image.custimg_med {
 					width: 100%;
+					height: auto;
 				}
 
-			}
+			} */
 
 		.image .custimg_sm {
 			display: block; 
@@ -2402,13 +2405,21 @@ input, select, textarea {
 			width: 40%;
 		}
 
-			@media screen and (max-width: 1280px) {
+			/* @media screen and (max-width: 1280px) {
 
 				.image.custimg_sm {
 					width: 100%;
+					height: auto;
 				}
 
+			} */
+
+		@media screen and (max-width: 736px) {
+			.image img, .image .custimg_full, .image .custimg_lg, .image .custimg_med, .image .custimg_sm {
+				width: 100%;
+				height: auto;
 			}
+		}
 
 		.image img {
 			border-radius: 4px;
