@@ -21,7 +21,9 @@
 					<div id="main-article">
 						<!-- <div class="inner"> -->
 							<h3>Small-Animal VR Trackball</h3>
-							<img src="images/TrackballImplantedLocust.jpeg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 60%;">
+							<div class="image">
+								<img src="images/TrackballImplantedLocust.jpeg" class="custimg_med">
+							</div>
 							<b>Background:</b>
 							<p>The development of the trackball was the second project in which I led the team and mentored junior engineers and scientists through the development process. We were able to successfully develop a working system, test to find issues and iterate to solve them, and ultimately perform a successful proof-of-concept study before transitioning the project to a junior team member when I graduated.</p>
 							<p>The Trackball VR system was developed to address two primary needs: first, a way to test the minimally-invasive preparation process under ambulatory (walking) conditions, and second, a method to obtain simultaneous neural- and behavioral-data. </p>
@@ -61,12 +63,16 @@
 							<u>Olfactometer</u>
 							<p>The olfactometer was based off a reduced channel-count version of the 24-channel olfactometer developed earlier, and so was straightforward to assemble, and proved reliable in testing. Flow regulators were incorporated along with the solenoids and solid-state relay board into a unified module for simpler use. </p>
 							<p>In addition, I wrote a small embedded library for controlling stimulus timing, and enabling settings, run, and abort commands from the serial line for interfacing with the GUI.</p>
-							<img src="images/8chOlfactometer_Trackball.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 80%;">
+							<div class="image">
+								<img src="images/8chOlfactometer_Trackball.jpg" class="custimg_lg">
+							</div>
 							<u>Trackball</u>
 							<p>The trackball presented a larger development challenge. A foam ball was selected for cheapness, ready availability, and the rough texture providing a better walking surface. Initial prototypes produced an air cushion using pressurized air, but while it did provide a low-friction support for the foam ball, however balancing presented challenges, and produced imbalanced forces causing movement of the ball, or when severe large oscillations. While not sufficient to force a locust to navigate a given direction, the force would bias behavior, introducing noise to the data. In addition, the release of the high-pressure air was quite loud and interfered with experiments being conducted in the same room.</p>
 							<p>A better solution was found by suspending the ball on a low-velocity, high-volume air cushion provided by an inline fan, and routed through a perforated hemisphere in which the ball was suspended. Additional stability was provided by four vents on the rim of the hemisphere that released air-streams to the sides of the ball, constraining lateral movement. A rotating shutter mechanism allowed tuning of the aperture size of the vents, with the total air volume being modulated by fan speed or a second shutter positioned over the fan inlet. Mounting points for the mouse sensors were also incorporated along the equator of the foam ball. Testing revealed that the air cushion also caused significant turbulence above the foam ball where the locust would be. To prevent this from disrupting olfactory stimuli, a deflector was added, with height adjusted using four 3mm screws.</p>
 							<!-- <img src="images/TrackballDiagram.png" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 80%;"> -->
-							<img src="images/TrackballDiagram.png" class="custimg">
+							<div class="image">
+								<img src="images/TrackballDiagram.png" class="custimg_lg">
+							</div>
 							<u>Locust harness and mount system</u>
 							<p>The design of a system for harnessing the locust, implanting the electrode, and easing transfer to the trackball system overlapped with the refinement of the minimally invasive surgical process. The details on this development are explored in the Implantation Surgery Tools and Processes project.</p>
 							<!-- <img src="images/TrackballLocustWithGrass.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 40%;"> -->
@@ -76,14 +82,18 @@
 							<p>	</p>
 							<u>GUI</u>
 							<p>The undergraduate team member developed an excellent basic GUI, but during testing it was found that it was unstable due to the GUI framework being incompatible with multithreading. Unfortunately the undergraduate member graduated before having time to rework the code. To prevent IO operations from locking the code, I rewrote it to use multiple processes instead, with the GUI spawning two subprocesses, one for recording and timestamping video data, and one handling serial communication. I also added some features that hadn’t yet been incorporated, such as the ability to load task settings files for different experiments.</p>
-							<img src="images/TrackballExampleTrial.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 60%;">
+							<div class="image">
+								<img src="images/TrackballExampleTrial.jpg" class="custimg_med">
+							</div>
 							<u>Mouse sensor testing</u>
 							<p>The project's initial sensor communication was spearheaded by the undergraduate team member. Following initial testing, the decision was made to upgrade from the ADNS-3050 to the more ADNS-9800 sensor both for better performance and the availability of a breakout board PCB. This transition also provided an opportunity for onboarding a new graduate-student team member, who was assigned to perform testing and update the code to use the new sensors. </p>
 							<p>I designed and assembling mounting cases and brackets for the sensors, and we were able to tune alignment and calibration. During this testing we also discovered that the activation of the sensors introduced electrical noise in the neural-recording system. This was solved by simply adding grounded shielding to the sensor cases.</p>
 							<u>Testing incorporated components</u>
 							<p>Once the individual components had been validated, the full system was assembled. Synchronization between different components was achieved through TTL pulses sent from the Teensy 3.5 microcontroller, which handled all task timing once the task protocol had been sent and the start-experiment signal received from the GUI. </p>
 							<p>At this point another member was added to the team, a graduate materials scientist who I had previously collaborated with in the development and testing of the flexible electrodes. We then engaged in testing the full system with live locusts, and through a series of revisions dramatically improved the success rate of the implantation surgery from around 20% to over 70%, and reduced the duration of the preparation time by ~80%. With the process at a satisfactory point and the remaining bugs stamped out, we proceeded to a proof of concept study.</p>
-							<img src="images/TrackballImplantedLocustFinal.jpeg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 60%;">
+							<div class="image">
+								<img src="images/TrackballImplantedLocustFinal.jpeg" class="custimg_med">
+							</div>
 							<b>Phase 5: Operation and Ownership Transfer</b>
 							<p>For the proof-of-concept study, a small selection of odorants from the treadmill and other lab studies were assayed. Stimulation parameters were configured to match other previous experiments in the lab, and movement and neural responses to the stimuli were recorded across seven locust preparations. I analyzed movement data, and found that approach to one of the attractive odorants was positively correlated with the magnitude of the neural response to the stimulus, demonstrating the utility of the method for analyzing simultaneously recorded neural and behavioral data.</p>
 							<p>While further additions and revisions remained to be made (e.g. antennal tracking, fine-tuning and validating spike sorting, etc.) the project was sufficiently advanced for application to research and validation questions, and I was leaving for graduation soon. During the course of development the junior graduate student had been sufficiently trained and immersed in the project to be capable of taking over the project on my departure. </p>

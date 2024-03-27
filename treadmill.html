@@ -21,7 +21,9 @@
 					<div id="main-article">
 						<!-- <div class="inner"> -->
 							<h3>Small-Animal VR Odor-Trail Treadmill</h3>
-							<img src="images/treadmillMain.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 40%;">
+							<div class="image">
+								<img src="images/treadmillMain.jpg" alt="" class="custimg_sm">
+							</div>
 							<b>Background:</b>
 							<p>Understanding how organisms use olfactory information (smells) to navigate is an important component to either implementing cyborg sensors or mimicking biological approaches. The odorants that are used for navigation can be broken down into two broad categories: airborne, like the scents when you pass by a restaurant, and surface-bound, where the odorants are affixed to a surface, such as ant trails.</p>
 							<p>Surface-bound odorants have been studied less compared to airborne-plume odorant studies, but have unique characteristics that make them an interesting approach for studying olfactory-guided navigation. The three most-important differences are that the concentrations of odorants along odor trails remain fairly constant, whereas airborne plumes dissipate rapidly, and change concentration as you move along the plume; that surface-bound trails are easier to define, and so it may be possible to leverage analysis of observed sampling and following behaviors for more insight into the underlying mechanisms of the search strategies; and that mechanical disturbance of surface-bound odorants can increase the concentration available to sample (e.g. sniffing or patting with antennae). </p>
@@ -75,7 +77,7 @@
 							<p>The treadmill was extensively tested prior to use, beginning with black “pseudo locusts” to verify tracking, printing, and paper-towel movement performance, during which a number of issues were rectified. It was then tested using locusts, and test data collected using a zig-zag pattern, and the performance and data analyzed to refine the trial process. </p>
 							<p>One particularly confusing bug encountered at this point was periodic false positives on a limit switch, and occasional embedded controller restarts. Ultimately this was traced to a buildup of static electricity due to the movement of the paper towel, and was addressed by a combination of mechanical (limiting of plastic surfaces the paper towel slid over) and electrical revisions (additional grounding and shielding of some cables, incorporation of opto-isolation to protect the core microcontroller from any static that might affect other components, and software revisions to unexpected limit switch triggers).</p>
 							<div class="image">
-								<img src="images/PCBLayout.png" class="custimg_sm">
+								<img src="images/PCBLayout.png" class="custimg_med">
 							</div>
 							<p>Other revisions during this period included mechanical protection over the drive mechanism to prevent the paper towel from becoming entangled, implementation of a more precise and stable alignment system for the paper towel to prevent lateral drift during operation, and the revision of most components to modular assemblies for easier movement and greater flexibility for future iterations. </p>
 							<b>Phase 5: Operation and Release</b>
